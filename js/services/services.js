@@ -1,6 +1,3 @@
-/**
- * Created by adiaguidry on 1/2/16.
- */
 angular.module('mainApp')
     .service('moneyService', function(){
         this.money_amounts=["1.00","5.00","10.00","15.00","20.00"];

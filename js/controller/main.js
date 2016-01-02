@@ -1,6 +1,3 @@
-/**
- * Created by adiaguidry on 1/2/16.
- */
 angular.module('mainApp')
     .controller('routeCtrl', function($routeProvider){
     })
