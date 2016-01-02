@@ -1,0 +1,37 @@
+
+<div ng-controller="taskCtrl" class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-3" style="background-color: yellow; height: 70vh;">
+                <a href="photos.html"><img style="margin-top:5%;"width="90%" src="images/goals.png"></a>
+                <h4>GOALS,<br> lets venture into goal setting! This is a great habits to form now.</h4><p>Use the Goal setting tool and create 10 goals for the week. If you complete the goal Make it off and move onto the next. Check your bank at the end of the week to see how much your goals paid off!</p>
+            </div>
+            <div class="col-xs-6" style="background-color: #0AF089; height: 70vh;">
+                <!--       moments date here for the weekly goal setting -->
+                <h1 id='date'></h1>
+                <div style="height: 70vh;">
+                    <div class="row">
+                        <div class="col-xs-12" style="height: 100%; border: 1px solid; background-color: #fff; color: #000;">
+                            <div>
+                                <h3 style="color: #000">CREATE YOUR GOALS FOR THIS WEEK</h3>
+                                <form ng-submit="addGoal()">
+                                    <input type="text" style="width:100%; background-color: #222; color:#fff" ng-model="newGoalText">
+                                    <button class="btn btn-info pull-right" type="submit">Save</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-3" style="background-color: #444; height: 70vh; color: white">
+                <div>
+                    <ol>
+                        <li ng-repeat="goal in goals" ng-class="{'done': done}" > {{goal.text}} <button class="btn btn-info btn-sm" ng-click="done=!done">Did it</button></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+  

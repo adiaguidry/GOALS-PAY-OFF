@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Web Projects">
+    <meta name="author" content="Adia Guidry">
+
+    <title>Adia Guidry</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <div style="display:inline-block">
+        <h1>GOALS PAY OFF</h1>
+    </div>
+    <div style="display:inline-block; float:right;">
+        <div>
+            Log In Name:<input>
+            Password:<input>
+            <button class="btn btn-info btn-sm">Register Now</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3" style="background-color: teal; height: 30vh;">
+            <svg id="clock" viewBox="0 0 100 100">
+                <circle id="face" cx="40" cy="40" r="35"/>
+                <g id="hands">
+                    <rect id="hour" x="38.5" y="12.5" width="5" height="40" rx="2.5" ry="2.55" />
+                    <rect id="min" x="38" y="12.5" width="3" height="40" rx="2" ry="2"/>
+                    <line id="sec" x1="40" y1="50" x2="50" y2="16" />
+                </g>
+            </svg>
+        </div>
+        <div class="col-xs-6" style="background-color: yellow; height: 30vh;">
+            <img style="margin-left: 5%;margin-top: -25px;," width="90%"src="images/map.gif">
+        </div>
+        <div class="col-xs-3" style="background-color: salmon; height: 30vh;">
+            <img width="80%" src="images/calendar_icon.png">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12" style="background-color: #777; height: 30vh;">
+            <div class="row">
+                <div class="col-xs-3" style="background-color: purple; height: 30vh;">
+                    <a href="home.html"><img width="70%" style="margin-left: 10%;" src="images/vision_board.png"></a>
+                </div>
+                <div class="col-xs-6" style="text-align:center;background-color: aqua; height: 60vh;">
+                    <h3>Kid-dults is a website for kids that are ready to form great adult habits!</h3>
+                    <img width="85%" style="margin-top: 5%;" src="images/bank.png">
+                </div>
+                <div class="col-xs-3" style="background-color: #555; height: 60vh;">
+                    <a href="#"><img width="95%" style="margin-top:5%" src="images/bookcase.png"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-xs-3" style="background-color: orange; height: 30vh;">
+            <img width="80%" src="images/goals.png">
+        </div>
+        <!--  <div class="col-md-6" style="background-color: aqua; height: 30vh;">
+            hello
+         </div> -->
+        <div class="col-xs-3 col-xs-offset-6" style=" height: 10vh;">
+
+        </div>
+    </div>
+</div>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/moment.js">
+</script>
+<script type="text/javascript">
+    console.log('is this working');
+    $('#date').append(moment().format('dddd'));
+</script>
+
+</body>
+
+</html>

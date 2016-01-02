@@ -1,0 +1,42 @@
+
+<div id="bank" ng-controller="bankCtrl" class="row">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-xs-3">
+                <a href="#"><img style="margin-top:15%;"width="90%" src="images/bank.png"></a>
+                <h4 ng-click="helloConsole()">MONEY,<br> lets venture into learning about money and good habits to form now.</h4>
+                <p>It's always good to set goals and understand how and where you are spending your money. Try setting a goal for each caterory.</p>
+            </div>
+            <div class="col-xs-6">
+                <div class="row text-center">
+                    <div class="drop_zone" data-drop="true" ng-model="money" jqyoui-droppable="{beforeDrop: 'beforeDrop'}" ng-repeat="account in accounts" data-id="{{account.$id}}">
+                        <h3>{{ account.name }}</h1>
+                            <div class="money_amounts">
+                                <!--  change the goal amount to be dynamic -->
+                                <p>Goal Amount: $<span id="amount">{{account.amount}}</span> </p>
+                                <p>Current Amount: $<span id="current_amount">{{ account.current}}</span> </p>
+                                <p>Needed Amount: $<span id="needed_amount"></span></p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div ng-controller="taskCtrl" class="col-xs-3 money">
+                <div class="row">
+                    <div class="col-xs-3 drag_money"data-drag="true" jqyoui-draggable="{animate:true}" data-id={{money}}  ng-repeat="money in money_amounts">
+                        {{ money}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  modal after the drop of the money to confirm placement -->
+<script type="text/ng-template" id="myModalContent.html">
+    <div class="modal-body">
+        <b>You want to put {{money}} </b>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">OK</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+</script>
