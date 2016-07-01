@@ -81,7 +81,7 @@ angular.module('mainApp')
             return modalInstance.result;
         };
     })
-
+console.log('test');
 
     //this is the end of the bank controller
     .controller('ModalInstanceCtrl', function ($scope, $modalInstance, moneyService) {
